@@ -1,0 +1,26 @@
+{
+  "name": "forestal_pico",
+  "version": "1.0.0",
+  "description": "Página web forestal pico",
+  "main": "app.js",
+  "dependencies": {
+    "angular-animate": "^1.3.20",
+    "angular-material": "^1.1.4",
+    "angular-route": "^1.6.4",
+    "npm-git-install": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhernandez73/forestal_pico.git"
+  },
+  "author": "Juan Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhernandez73/forestal_pico/issues"
+  },
+  "homepage": "https://github.com/jhernandez73/forestal_pico#readme"
+}

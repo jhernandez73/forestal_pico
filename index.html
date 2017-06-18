@@ -1,57 +1,49 @@
 <!DOCTYPE html>
-
 <!-- define angular app -->
 <html ng-app="forestalApp">
-
 <head>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/css/angular-material.css">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- SCRIPTS -->
   <script src="/scripts/angular.js"></script>
   <script src="/scripts/angular-aria.min.js"></script>
   <script src="/scripts/angular-material.min.js"></script>
   <script src="/scripts/angular-route.js"></script>
-
   <!-- APP CONFIG -->
   <script src="/scripts/app-config.js"></script>
-
   <!-- CONTROLLERS -->
   <script src="/controllers/indexController.js"></script>
+  <script src="/controllers/serviceController.js"></script>
 </head>
-
 <!-- define angular controller -->
 <body ng-controller="indexController">
+<!--- START CABEZERA -->
+ <div id="header">
   <nav class="navbar navbar-default">
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Angular Routing Example</a>
-      </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#about">INSTITUCIONAL</a></li>
+        <li><a href="#contact">SERVICIOS</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
       </ul>
     </div>
   </nav>
-
+ </div>
+  <!--- END CABEZERA -->
   <div id="main">
-  
     <!-- angular templating -->
 		<!-- this is where content will be injected -->
-    <div ng-view></div>
-    
+    <div ng-view>
+      
+    </div>    
   </div>
-  
   <footer class="text-center">
-    <p>View the tutorial on <a href="http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating">Scotch.io</a></p>
-  
-    <p>View a tutorial on <a href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview">Animating Your Angular Single Page App</a></p>
+    
   </footer>
-  
 </body>
-
 </html>

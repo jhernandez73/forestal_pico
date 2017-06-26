@@ -1,0 +1,55 @@
+<div class="layout-row top-20">
+	<div class="flex-80">
+		<div class="layout-row basic-component">
+			<img src="/img/servicios/forestrans/forestrans_cabecera.png" alt="" width="100%">
+		</div>
+		<div class="layout-row basic-component top-30">
+			<div class="flex-60">
+				<div class="layout-column">
+					<div class="flex-40 text-box width-95">  
+						<p class="text-orange">Forestrans es la propia empresa de logística de Forestal Pico que, con una vasta flota de camiones, logra cubrir las entregas en una amplia zona del centro-sur de nuestro país.</p><br>
+						<p>Su zona de cobertura abarca el sur de la provincia de Córdoba, la provincia de La Pampa, Buenos Aires, Neuquén, Río Negro, Chubut y Santa Cruz.</p><br>
+						<p>La flota propia de vehículos permite garantizar entregas a tiempo en distintos puntos del país, brindando un servicio confiable y optimizando, a la vez,  los costos de transporte de materiales.</p>
+					</div>
+					<div class="flex-60">
+						<img src="/img/servicios/forestrans/forestrans_mapa.png" alt="" height="450px" width="55%">
+					</div>
+				</div>
+			</div>
+			<div class="flex-40">
+				<div class="layout-column">
+					<div class="flex">
+						<img src="/img/servicios/forestrans/forestrans_foto1.png" alt="" width="100%">
+					</div>
+					<div class="flex">
+					    <img src="/img/servicios/forestrans/forestrans_foto2.png" alt="" width="100%">
+					</div>
+					<div class="flex">
+					  	<img src="/img/servicios/forestrans/forestrans_foto3.png" alt="" width="100%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex-20 side-menu" ng-controller="menuController">
+		<div class="tittle">
+			<p>
+				MENÚ
+			</p>
+			<hr style="width: 95%">
+		</div>
+		<div class="top-10">
+			<ul>
+    			<li ng-repeat="link in menuLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+    	</div>
+    	<div class="tittle">
+		<hr style="width: 95%">
+		</div>
+		<div class="top-10">
+			<ul>
+				<li ng-repeat="link in menuDownloadLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

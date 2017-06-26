@@ -1,0 +1,124 @@
+<div class="layout-column tittle basic-component title-ubicacion">
+				<p>
+					UBICACIÓN
+				</p>
+				<hr>
+</div>
+<div class="layout-row top-20">
+	<div class="flex-80">
+		<!-- ITEM 1 -->
+		<div class="layout-row card-map">
+			<div class="flex-35 card-text">
+				<div class="layout-column">
+					<div class="card-map-text-header flex-25">
+						<p>GENERAL PICO<br>
+						Casa Central</p> 
+					</div>
+					<div class="card-map-text flex-30"> 
+						<p>35°40'44" S - 63°45'09" O <br>
+						Ruta Provincial N°1 y Calle 104 <br>
+						(6360) General Pico - La Pampa
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- MAPA -->
+			<div class="flex-65 card-map">
+				<div class="map" id="map1"> 
+				</div>
+				<img src="/img/institucional/ubicacion/separador.png" alt="División Industrial" width="90%" align="left" />
+			</div>
+		</div>
+		<!-- ITEM 2 -->
+		<div class="layout-row card-map">
+			<div class="flex-35 card-text">
+				<div class="layout-column">
+					<div class="card-map-text-header flex-25">
+						<p>GENERAL PICO<br>
+						Planta Maracó - Div. Industrial</p> 
+					</div>
+					<div class="card-map-text flex-30"> 
+						<p>35°40'36" S - 63°46'13" O <br>
+						José Viscardis 85 - Parque Industrial <br>
+						(6360) General Pico - La Pampa
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- MAPA -->
+			<div class="flex-65 card-map">
+				<div class="map" id="map2"> 
+				</div>
+				<img src="/img/institucional/ubicacion/separador.png" alt="División Industrial" width="90%" align="left" />
+			</div>
+		</div>
+		<!-- ITEM 3 -->
+		<div class="layout-row card-map">
+			<div class="flex-35 card-text">
+				<div class="layout-column">
+					<div class="card-map-text-header flex-25">
+						<p>GENERAL PICO<br>
+						Casa Central</p> 
+					</div>
+					<div class="card-map-text flex-30"> 
+						<p>37°17'16" S - 59°12'06" O <br>
+						Ruta Nacional 226 y Acceso a Base Aérea <br>
+						(7000) Tandil - Buenos Aires
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- MAPA -->
+			<div class="flex-65 card-map">
+				<div class="map" id="map3"> 
+				</div>
+				<img src="/img/institucional/ubicacion/separador.png" alt="División Industrial" width="90%" align="left" />
+			</div>
+		</div>
+		<div class="layout-row card-map">
+			<div class="flex-35 card-text">
+				<div class="layout-column">
+					<div class="card-map-text-header flex-25">
+						<p>NEUQUÉN<br>
+						Sucursal / Armaduras del Neuquén</p> 
+					</div>
+					<div class="card-map-text flex-30"> 
+						<p>38°54'46" S - 68°06'28" O <br>
+						Lotes 12 y 13 Manzana 3, Parque Industrial Oeste <br>
+						(8300) Ciudad de Neuquén - Neuquén
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- MAPA -->
+			<div class="flex-65 card-map">
+				<div class="map" id="map4"> 
+				</div>
+				<img src="/img/institucional/ubicacion/separador.png" alt="División Industrial" width="90%" align="left" />
+			</div>
+		</div>
+	</div>
+	<div class="flex-20 side-menu" ng-controller="menuController">
+		<div class="tittle">
+			<p>
+				MENÚ
+			</p>
+			<hr style="width: 95%">
+		</div>
+		<div class="top-10">
+			<ul>
+    			<li ng-repeat="link in menuLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+    	</div>
+    	<div class="tittle">
+		<hr style="width: 95%">
+	</div>
+	<div class="top-10">
+		<ul>
+			<li ng-repeat="link in menuDownloadLinks"><a href="link.src">{{link.text}}</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+

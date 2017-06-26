@@ -19,6 +19,7 @@
 }
 
 footer {
+    bottom:0px;
 	height: 149px;
 	background-image: url("/img/pie/pie.png");
 }
@@ -28,11 +29,11 @@ body {
 	display: inline-block;
     margin: 0px auto;
     text-align: center;
-    height: 1000px;
 }
 
 #main {
-    height:650px;
+    min-height:600px;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -79,6 +80,7 @@ html {
 .cards-component {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 20px; 
 }
 
 .basic-component {
@@ -108,6 +110,22 @@ html {
 
 .top-40 {
     margin-top:40px;
+}
+
+.bot-10 {
+    margin-bottom:10px;
+}
+
+.bot-20 {
+    margin-bottom:20px;
+}
+
+.bot-30 {
+    margin-bottom:30px;
+}
+
+.bot-40 {
+    margin-bottom:40px;
 }
 
 .tittle  {
@@ -148,4 +166,146 @@ html {
 
 .side-menu ul li a {
     color:black;
+}
+
+.card-map {
+    margin-bottom: 20px; 
+}
+
+.map {
+    height: 200px;
+    width: 90%;
+}
+
+.card-map-text-header {
+    background-color: grey;
+    color:white;
+    margin-left: 10%; 
+    width: 90%;
+    border-bottom: 10px solid #ff8400;
+}
+
+.card-map-text-header p {
+    margin-top: 15px;
+    margin-left: 10px;
+    line-height: 110%;
+}
+
+.card-map-text {
+    margin-left: 10%; 
+    width: 90%;
+    border: 1px solid lightgrey;
+}
+
+.card-map-text p {
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 110%;
+    font-size: 12px;
+    width: 90%;
+}
+
+.card-map .card-text {
+    margin-top: 0px;
+}
+
+.title-ubicacion {
+    margin-top: 10px; 
+}
+
+.title-ubicacion hr {
+    width: 40%;
+}
+
+.video-component {
+    margin-left: 10px;
+    margin-bottom: 15px
+}
+
+.linkable {
+    cursor:pointer;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.text-orange {
+    color:#ff8400;
+}
+
+.bg-grey {
+    background-color:grey;
+}
+
+.mision-component {
+    height: 500px;
+}
+
+.w-85 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.w-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.w-95 {
+    width: 95%;
+    margin: 0 auto;
+}
+.mision-component p {
+    padding: 10px;
+    color:white;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.mision-bottom-img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.armaduras-bottom-img {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.armadura-list p {
+    text-align: left;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.orange-square {
+  background-color: #ff8400;
+  float: right;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+
+.armadura .text-box {
+    line-height: 105%;
+    font-size: 14px;
 }

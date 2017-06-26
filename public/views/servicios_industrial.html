@@ -1,0 +1,48 @@
+<div class="layout-row top-20">
+	<div class="flex-80">
+		<div class="layout-row basic-component">
+			<img src="/img/servicios/industrial/division_cabecera.png" alt="" width="100%">
+		</div>
+		<div class="layout-row basic-component top-30">
+			<div class="flex-60">
+				<div class="text-box width-95">  
+					<p class="text-orange">Forestal Pico - DIVISIÓN INDUSTRIAL es una alianza estratégica con Acindar S.A. para la fabricación de bolas de molino por laminación, producto utilizado en la molienda de la industria minera y cementera.</p><br>
+					<p>Las bolas de molino son elaboradas a partir de barras de acero aleado de origen nacional provistas por Acindar S.A. El control meticuloso de nuestros procesos de tratamiento térmico entregan las características óptimas de endurecimiento total.</p><br>
+					<p>Contar con materia prima de tan alta calidad se traduce en un producto final de reducido desgaste, que optimiza los procesos de la molienda, contribuye al ahorro energético y maximiza la vida útil del molino.</p>
+					<p>La Planta Maracó de Forestal Pico - DIVISIÓN INDUSTRIAL, se encuentra en el Parque Industrial de la ciudad de General Pico y cuenta con una superficie cubierta de más de 11.000 m2. Las bolas de acero se fabrican en medidas que van desde 30 mm a 100 mm y son entregadas a cualquier punto del país con logística propia.</p>
+				</div>
+			</div>
+			<div class="flex-40">
+				<div class="layout-column">
+					<div class="flex">
+						<img src="/img/servicios/industrial/division_foto1.png" alt="" width="100%">
+					</div>
+					<div class="flex">
+					    <img src="/img/servicios/industrial/division_foto2.png" alt="" width="100%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex-20 side-menu" ng-controller="menuController">
+		<div class="tittle">
+			<p>
+				MENÚ
+			</p>
+			<hr style="width: 95%">
+		</div>
+		<div class="top-10">
+			<ul>
+    			<li ng-repeat="link in menuLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+    	</div>
+    	<div class="tittle">
+		<hr style="width: 95%">
+		</div>
+		<div class="top-10">
+			<ul>
+				<li ng-repeat="link in menuDownloadLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -16,6 +16,7 @@
 	app.use('/img', express.static(__dirname + '/public/img'));
 	app.use('/controllers', express.static(__dirname + '/public/controllers'));
 	app.use('/views', express.static(__dirname + '/public/views'));
+	app.use('/pdf', express.static(__dirname + '/pdf'));
 
 	app.get('/', function (req, res) {
   		res.render('index')

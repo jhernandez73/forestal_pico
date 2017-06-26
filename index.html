@@ -13,26 +13,145 @@
   <script src="/scripts/angular-aria.min.js"></script>
   <script src="/scripts/angular-material.min.js"></script>
   <script src="/scripts/angular-route.js"></script>
+  <script src="https://smtpjs.com/smtp.js"></script>
   <!-- APP CONFIG -->
   <script src="/scripts/app-config.js"></script>
   <!-- CONTROLLERS -->
   <script src="/controllers/indexController.js"></script>
   <script src="/controllers/serviceController.js"></script>
+  
+  <style>
+    
+
+    .nav ul {
+      list-style: none;
+      background-color: #444;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-style: 'Roboto', sans-serif;
+    }
+
+    .nav li {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2em;
+      line-height: 40px;
+      text-align: left;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding-left: 10px;
+      border-bottom: 1px solid #888;
+      transition: .3s background-color;
+    }
+
+    .nav a:hover {
+      background-color: #005f5f;
+    }
+
+    .nav a.active {
+      background-color: #aaa;
+      color: #444;
+      cursor: default;
+    }
+
+    /* Sub Menus */
+    .nav li li {
+      font-size: .5em;
+    }
+
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+    @media screen and (min-width: 650px) {
+      .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+      }
+
+      .nav a {
+        border-bottom: none;
+      }
+
+      .nav > ul > li {
+        text-align: center;
+      }
+
+      .nav > ul > li > a {
+        padding-left: 0;
+      }
+
+      /* Sub Menus */
+      .nav li ul {
+        position: absolute;
+        display: none;
+        width: inherit;
+      }
+
+      .nav li:hover ul {
+        display: block;
+      }
+
+      .nav li ul li {
+        display: block;
+      }
+    }
+
+  </style>
 </head>
-<!-- define angular controller -->
-<body ng-controller="indexController">
-<!--- START CABEZERA -->
- <div id="header">
-  <nav class="navbar navbar-default">
+<!-- define angular controller 
+<nav class="navbar navbar-default">
     <div class="container">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">INICIO</a></li>
-        <li><a href="#about">INSTITUCIONAL</a></li>
+        <li><a href="#about">INSTITUCIONAL</a>
+        </li>
         <li><a href="#contact">SERVICIOS</a></li>
         <li><a href="#contact">CONTACTO</a></li>
       </ul>
     </div>
-  </nav>
+  </nav>-->
+<body ng-controller="indexController">
+<!--- START CABEZERA -->
+ <div id="header">
+ <nav class="navbar navbar-default">
+   <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">INICIO</a></li>
+        <li class="tutorials">
+        <a href="#">INSTITUCIONAL</a>
+          <ul>
+            <li><a href="#">LA EMPRESA</a></li>
+            <li><a href="#">MISIÓN/VISIÓN VALORES</a></li>
+            <li><a href="#">HISTORIA</a></li>
+            <li><a href="#">UBICACIÓN</a></li>
+          </ul>
+        </li>
+        <li class="about">
+        <a href="#">SERVICIOS</a>
+          <ul>
+            <li><a href="#">GENERALES</a></li>
+            <li><a href="#">ARMADURAS DEL NEUQUÉN</a></li>
+            <li><a href="#">FORESTRANS</a></li>
+            <li><a href="#">DIVISIÓN INDUSTRIAL</a></li>
+          </ul>
+        </li>
+        <li class="news"><a href="#">CONTACTOS</a></li>
+      </ul>
+    </div>
+    </nav>
  </div>
   <!--- END CABEZERA -->
   <div id="main">

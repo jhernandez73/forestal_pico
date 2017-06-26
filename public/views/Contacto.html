@@ -1,0 +1,219 @@
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ff8400;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4CAF50;
+}
+
+.panel {
+    border-radius: 5px;
+    background-color: #828282;
+    padding: 20px;
+}
+</style>
+<script type="text/javascript">
+	(document).ready(function(){
+
+		function enviarEmail(){
+			var consulta=document.getElementById("consulta");
+			var telefono=document.getElementById("tel");
+			var dirección=document.getElementById("dir")
+			var email=document.getElementById("email");	
+			var asunto=;
+			var cuerpo="Consulta:"+consulta"/n"+"Telefono:"+telefono+"/n"+"Dirección:"+direccion+"/n"+"Email:"+email;
+
+			Email.send("InfoForestal@hotmail.com",
+				correoUsuario,
+				asunto,
+				cuerpo,
+				"smtp.gmail.com",
+				"jonaliboa@gmail.com",
+				"15507419poker");
+				}
+
+	})
+</script>
+<div class="layout-row top-20">
+	<div class="flex-45">
+		<div class="layout-column basic-component">
+			<div flex="50" class="flex-10 text-box">
+				<div class=tittle>
+					<p>
+					CONTACTO
+					</p>
+					<hr>
+				</div>
+				<br>
+				<p id="primerParrafo">
+					Forestal Pico le ofrece numerosas vías de comunicación en las que siempre encontrará disposición para responder a su consulta, tomar su pedido o escuchar su sugerencia.
+				</p>
+				<br>
+				<p class="flex-80" style="font-size:11px" id="segundoParrafo">
+					GENERAL PICO - CASA CENTRAL <br>
+					Ruta Provincial N°1 y Calle 104 <br>
+					(6360) General Pico - La Pampa <br>
+					Tel: (02302) 43 0060 y Líneas Rotativas <br>
+					Fax Directo: 0810-222-3673 (FORESTAL) <br>
+					info@forestalpico.com.ar <br>
+
+				</p>
+				<br>
+				<p class="flex-80" id="segundoParrafo">
+					TANDIL - SUCURSAL <br>
+					Ruta Nacional 226 y Acceso a Base Aérea <br>
+					(7000) Tandil - Buenos Aires <br>
+					Tel: (0249) 15 4380760 / 15 4380783 / 15 4380786 <br>
+					depositotandil@forestalpico.com.ar <br>
+				<p>
+				<br>
+				<p class="flex-80" id="segundoParrafo">
+					NEUQUÉN - SUCURSAL // ARMADURAS DEL NEUQUÉN <br>
+					Lotes 12 y 13 Manzana 3, Parque Industrial Oeste <br>
+					(8300) Ciudad de Neuquén - Neuquén <br>
+					Tel: (0299) 15 5792818 <br>
+					depositoneuquen@forestalpico.com.ar <br>
+				</p>
+
+			</div>
+		</div>	
+</div>
+<script>
+</script>
+	<div class="flex-35 text-box">
+	<div class="layout-column basic-component vertical-middle" >
+      <div class="container" >
+           <div class="panel">
+				  <form action="/action_page.php">
+				    <label for="nomApe">*Nombre y Apellido</label>
+				    <input type="text" id="nomApe" name="nomApe" placeholder=" Nombre y Apellido">
+				    <label for="email">*Email</label>
+				    <input type="text" id="email" name="email" placeholder=" email..">
+				    <label for="tel">*Telefono</label>
+				  	<input type="text" id="tel" name="tel" placeholder="Telefono">
+				  	<label for="dir">Dirección</label>
+				  	<input type="text" id="dir" name="tel" placeholder="Dirección">
+				  	<label for="lugar">Ciudad /Provincia / País</label>
+				  	<input type="text" id="lugar" name="tel" placeholder="Ciudad, Provincia o País">
+				  	<label for="Consulta">Consulta</label>
+				  	<textarea name="Consulta" type="text" cols="30" rows="5"></textarea>	
+				  	<input type="submit" onclick="enviarEmail()" value="Enviar">
+				  </form>
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="flex-20 side-menu">
+		<div class="tittle">
+			<p>
+				Productos
+			</p>
+			<hr style="width: 95%">
+		</div>
+		<div class="top-10">
+			<ul>
+    			<li ng-repeat="link in menuLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+    	</div>
+    	<div class="tittle">
+		<hr style="width: 95%">
+	</div>
+	<div class="top-10">
+		<ul>
+			<li ng-repeat="link in menuDownloadLinks"><a href="link.src">{{link.text}}</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div class="layout-row top-20">
+<div>
+	<div class=tittle>
+			<p>Ventas</p>
+			<hr>
+	</div>
+  <div class="ng-scope layout-row">
+    <div style="font-size: 11px; text-align: justify; margin-left: 30px; margin-top: 20px;" class="flex-33">
+			<p>
+				LA PAMPA - Empresas Constructoras <br>
+				Eduardo Escudero <br>
+				(02302) 15 669301 <br>
+				eescudero@forestalpico.com.ar <br>
+			</p>
+			<p>
+				TANDIL - Sucursal <br>
+				Néstor Saez <br>
+				(0249) 15 4578980 <br>
+				nsaez@forestalpico.com.ar <br>
+		    </p>
+			<p>
+				NOROESTE BUENOS AIRES <br>
+				Andrés Rodríguez <br>
+				(02302) 15 606756 <br>
+				arodriguez@forestalpico.com.ar <br>
+			</p>
+    </div>
+	<div style="font-size: 11px; text-align: justify; margin-left: 30px; margin-top: 20px;" class="flex-33">
+    		<p>
+				LITORAL <br>
+				Cristian Uris <br>
+				(02302) 15 619651 <br>
+				curis@forestalpico.com.ar
+			</p>
+			<p>
+				NEUQUEN - ALTO VALLE RIO NEGRO <br>
+				Germán Cecchi <br>
+				(0299) 15 6330571 / 15 4193688 <br>
+				gcecchi@forestalpico.com.ar <br>
+			</p>
+			<p>
+				CENTROSUR BUENOS AIRES-RIO NEGRO <br>
+				Fabián Salina <br>
+				(02302) 15 619648 <br>
+				fsalina@forestalpico.com.ar <br>
+			</p>
+    </div>
+	<div style="font-size: 11px; text-align: justify; margin-left: 30px; margin-top: 20px;" class="flex-33">
+    		<p>
+				SUR LA PAMPA - SUDESTE BUENOS AIRES <br>
+				Andrés Camejo <br>
+				(02302) 15 622039 <br>
+				acamejo@forestalpico.com.ar <br>
+			</p>
+			<p>
+				GENERAL PICO y ZONA <br>
+				Roberto Videla <br>
+				(02302) 15 627648 <br>
+				rvidela@forestalpico.com.ar <br>
+			</p>
+			<p>
+				SUR CORDOBA - LA PAMPA <br>
+				Cristian Pechín <br>
+				(02302) 15 411587 <br>
+				cpechin@forestalpico.com.ar <br>
+			</p>
+    </div>
+</div>
+</div>
+
+
+
+
+

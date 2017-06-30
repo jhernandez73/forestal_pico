@@ -2,7 +2,7 @@
 	var forestalApp = angular.module('forestalApp', ['ngRoute']);
 
 	// configure our routes
-	/*forestalApp.config(function($routeProvider) {
+	forestalApp.config(function($routeProvider) {
 		$routeProvider
 			.when('/', {
 				templateUrl : '/views/inicio.html',
@@ -31,12 +31,18 @@
 			.when('/industrial', {
 				templateUrl : '/views/servicios_industrial.html',
 				controller  : ''
-			});
-	});*/
-	forestalApp.config(function($routeProvider) {
-		$routeProvider
+			})
+			.when('/contacto', {
+				templateUrl : '/views/contacto.html',
+				controller  : ''
+			})
+			.when('/historia', {
+				templateUrl : '/views/historia.html',
+				controller  : ''
+			})
 			.when('/', {
 				templateUrl : '/views/Contacto.html',
 				controller  : 'serviceController'
 			});
 	});
+	

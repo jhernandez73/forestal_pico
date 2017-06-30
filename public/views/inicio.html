@@ -80,17 +80,17 @@
 		</div>
 		<div class="top-10">
 			<ul>
-    			<li ng-repeat="link in menuLinks"><a href="link.src">{{link.text}}</a></li>
+    			<li ng-repeat="link in menuLinks"><a href="#" ng-click="openPDF(link.src)" return false;">{{link.text}}</a></li>
 			</ul>
     	</div>
     	<div class="tittle">
 		<hr style="width: 95%">
-	</div>
-	<div class="top-10">
-		<ul>
-			<li ng-repeat="link in menuDownloadLinks"><a href="link.src">{{link.text}}</a></li>
-		</ul>
-	</div>
+		</div>
+		<div class="top-10">
+			<ul>
+				<li ng-repeat="link in menuDownloadLinks"><a href="link.src">{{link.text}}</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
